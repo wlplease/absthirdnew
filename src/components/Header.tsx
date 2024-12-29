@@ -1,13 +1,13 @@
 "use client";
 
 import "../app/globals.css";
-import { useAddress, useDisconnect, useMetamask } from "@thirdweb-dev/react";
+import { useAddress, useDisconnect, useConnect, metamaskWallet } from "@thirdweb-dev/react";
 import Image from "next/image";
 
 export default function Header() {
   const address = useAddress();
   const disconnect = useDisconnect();
-  const connectWithMetamask = useMetamask();
+  const connect = useConnect();
 
   return (
     <header className="flex justify-between items-center px-8 py-4 bg-black text-white">
@@ -39,7 +39,7 @@ export default function Header() {
           <button
             onClick={async () => {
               try {
-                await connectWithMetamask();
+                await connect(metamaskWallet());
               } catch (error) {
                 console.error("Error connecting wallet:", error);
               }
