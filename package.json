@@ -1,0 +1,51 @@
+{
+  "name": "neuraic",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@abstract-foundation/agw-client": "^0.1.2",
+    "@abstract-foundation/agw-react": "^0.1.2",
+    "@privy-io/cross-app-connect": "^0.1.2",
+    "@thirdweb-dev/chains": "^0.1.120",
+    "@thirdweb-dev/react": "^4.9.4",
+    "bs58": "4.0.1",
+    "encoding": "^0.1.13",
+    "next": "14.2.22",
+    "pino-pretty": "^11.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "thirdweb": "^5.80.0",
+    "viem": "^2.21.57",
+    "wagmi": "^2.14.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^19.0.2",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "15.1.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "@types/react": "18.2.6",
+      "bs58": "4.0.1"
+    }
+  },
+  "packageManager": "pnpm@9.12.3"
+}
